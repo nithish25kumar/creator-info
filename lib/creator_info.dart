@@ -1,3 +1,4 @@
+import 'package:bingo/repositary/screens/selectmode/selectmode.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -19,7 +20,10 @@ class _CreatorpageState extends State<Creatorpage> {
         child: AppBar(
           leading: IconButton(
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (_) => Selectmode()),
+              );
             },
             icon: Icon(Icons.arrow_back_ios_new),
           ),

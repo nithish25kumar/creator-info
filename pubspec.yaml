@@ -6,9 +6,14 @@ version: 1.0.0+1
 environment:
   sdk: ^3.8.1
 
+
 dependencies:
   flutter:
     sdk: flutter
+  bingo:
+    git:
+      url: https://github.com/nithish25kumar/bingo-game-app.git
+      ref: main
   cupertino_icons: ^1.0.8
   url_launcher: ^6.3.0
   font_awesome_flutter: ^10.7.0
