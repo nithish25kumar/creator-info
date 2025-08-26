@@ -20,7 +20,7 @@ class _CreatorpageState extends State<Creatorpage> {
         child: AppBar(
           leading: IconButton(
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (_) => Selectmode()),
               );
