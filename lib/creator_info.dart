@@ -20,11 +20,13 @@ class _CreatorpageState extends State<Creatorpage> {
         child: AppBar(
           leading: IconButton(
             onPressed: () {
-              Navigator.pushReplacement(
+              Navigator.pushAndRemoveUntil(
                 context,
                 MaterialPageRoute(builder: (_) => Selectmode()),
+                (route) => false,
               );
             },
+
             icon: Icon(Icons.arrow_back_ios_new),
           ),
           backgroundColor: Color(0xff42C83C),
