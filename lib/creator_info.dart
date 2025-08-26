@@ -18,7 +18,9 @@ class _CreatorpageState extends State<Creatorpage> {
         preferredSize: Size.fromHeight(100),
         child: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             icon: Icon(Icons.arrow_back_ios_new),
           ),
           backgroundColor: Color(0xff42C83C),
